@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 /**
- * new_node - The function that creates a new_node in a linked_list
- * @node: The type of pointer of node to be created
+ * new_node - Function that creates a new_node in a linked_list
+ * @node: Type pointer of node to be created
  * Return: the node created
  */
 link_t *new_node(binary_tree_t *node)
@@ -19,8 +19,8 @@ link_t *new_node(binary_tree_t *node)
 	return (new);
 }
 /**
- * free_q - The function that free the nodes at the linked list
- * @head: The node of the linked_list
+ * free_q - Function that free the nodes at the linked list
+ * @head: Node of the linked_list
  */
 void free_q(link_t *head)
 {
@@ -34,10 +34,10 @@ void free_q(link_t *head)
 	}
 }
 /**
- * _push - The function that pushes a node into the stack
- * @node: The type pointer of node of the tree
- * @head: The type head of node in the stack
- * @tail: The type tail of node in the stack
+ * _push - Function that pushes a node into the stack
+ * @node: Type pointer of node of the tree
+ * @head: Type head node of in the stack
+ * @tail: Type tail node of in the stack
  */
 void _push(binary_tree_t *node, link_t *head, link_t **tail)
 {
@@ -53,8 +53,8 @@ void _push(binary_tree_t *node, link_t *head, link_t **tail)
 	*tail = new;
 }
 /**
- * _pop - The function that pops a node into the stack
- * @head: The type head node of in the stack
+ * _pop - Function that pops a node into the stack
+ * @head: Type head node of in the stack
  */
 void _pop(link_t **head)
 {
@@ -65,8 +65,8 @@ void _pop(link_t **head)
 	*head = temp_node;
 }
 /**
- * binary_tree_is_complete - The function that checks if a binary tree is complete
- * @tree: The type pointer of node of the tree
+ * binary_tree_is_complete - Function that checks if a binary tree is complete
+ * @tree: Type pointer of node of the tree
  * Return: 1 if is complete 0 if it is not
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
